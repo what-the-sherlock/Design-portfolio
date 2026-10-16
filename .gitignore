@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.vercel
+
+# secrets
+.env
+.env.local
+.env.*.local
+
+# raw capture material (processed copies live in public/media)
+captures/
+*.zip
