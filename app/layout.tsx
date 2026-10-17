@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Fragment_Mono, Instrument_Serif, Inter } from "next/font/google";
 import { FaviconAnimator } from "@/components/FaviconAnimator";
 import { FloatingScrollbar } from "@/components/FloatingScrollbar";
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <FloatingScrollbar />
           <FaviconAnimator />
+          <Analytics />
         </Providers>
       </body>
     </html>
